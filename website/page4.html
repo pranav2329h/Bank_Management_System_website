@@ -1,0 +1,48 @@
+<html>
+<head>
+<title></title>
+<!-- Include CSS File Here -->
+<link rel="stylesheet" href="C:/website/page1.css"/>
+<script>
+	 function validate()
+	 {
+	 	var j=document.getElementById("password");
+		var i=document.getElementById("username2");
+	 	if (j.value=="1234") 
+	 	{
+	 		alert(i.value+"  Rs transfer");
+	 	}
+	 	else
+	 	{
+	 		alert("wrong password");
+	 	}
+	 }
+	 function validate1()
+	 {
+		let url = "file:///C:/website/home.html";
+      window.open(url);
+	 } 
+</script>
+</head>
+<body>
+<div class="container">
+<div class="main">
+<h2>Money Transfer</h2>
+<form id="form_id" method="post" name="myform">
+<label>Account Number :</label>
+<input type="text" name="username" id="username"/>
+<label>Account Holder Name :</label>
+<input type="text" name="username3" id="username3"/>
+<label>IFC CODE :</label>
+<input type="text" name="username1" id="username1"/>
+<label>Amount:</label>
+<input type="text" name="username2" id="username2"/>
+<label>Password :</label>
+<input type="password" name="password" id="password"/>
+<input type="button" value="Transfer Money" id="submit" onclick="validate()"><br>
+<br><input type="button" value="Back" id="submit" onclick="validate1()">
+</form>
+</div>
+</div>
+</body>
+</html>

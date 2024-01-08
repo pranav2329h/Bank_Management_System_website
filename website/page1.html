@@ -1,0 +1,42 @@
+<html>
+<head>
+<title></title>
+<!-- Include CSS File Here -->
+<link rel="stylesheet" href="C:/website/page1.css"/>
+<script>
+	 function validate()
+	 {
+	 	var i=document.getElementById("username");
+	 	var j=document.getElementById("password");
+	 	if (i.value=="LBI0011"&&j.value=="1234") 
+	 	{
+	 			window.location.href="file:///C:/website/home.html";
+	 	}
+	 	else
+	 	{
+	 		alert("enter valid input");
+	 	}
+	 }
+	  function sign()
+	  {
+	  	window.location.href="file:///C:/website/page2.html";
+	  }
+</script>
+</head>
+<body background="C:/website/bank.jpg">
+<
+<div class="container">
+<div class="main">
+<h2>LBI Bank Login</h2>
+<form id="form_id" method="post" name="myform">
+<label>Account Number :</label>
+<input type="text" name="username" id="username"/>
+<label>Password :</label>
+<input type="password" name="password" id="password"/>
+<input type="button" value="Login" id="submit" onclick="validate()"><br>
+<br><input type="button" value="signup" id="signUP" onclick="sign()">
+</form>
+</div>
+</div>
+</body>
+</html>
